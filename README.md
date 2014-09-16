@@ -15,3 +15,34 @@ To install the plugin
 cordova plugin add https://github.com/MaginSoft/MFileChooser.git
 ```
 
+## Using the plugin ##
+
+The plugin creates the object `window.plugins.mfilechooser`. To use, call the `open()` method:
+
+### Simple using ###
+
+```javascript
+   window.plugins.mfilechooser.open([], function (uri) {
+      
+      alert(uri);
+      
+    }, function (error) {
+      
+        alert(error);
+    
+    });
+```
+
+### Filtering by extension ###
+
+```javascript
+   window.plugins.mfilechooser.open(['.doc', '.xls', '.ppt'], function (uri) {
+      
+      alert(uri);
+      
+    }, function (error) {
+      
+        alert(error);
+    
+    });
+```
