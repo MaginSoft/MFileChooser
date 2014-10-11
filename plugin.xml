@@ -65,6 +65,7 @@
 		<source-file src="src/android/mfilechooser/Utils.java" target-dir="src/com/maginsoft/utils" />
 		
         <source-file src="src/android/mfilechooser/libs/android-support-v4.jar" target-dir="libs/" />
+        <source-file src="src/android/mfilechooser/libs/android-support-v7-appcompat.jar" target-dir="libs/" />
 
         <!-- res files -->
         <source-file src="src/android/mfilechooser/res/drawable/divider_line_grey.png" target-dir="res/drawable" />
