@@ -11,6 +11,7 @@ import com.maginsoft.data.Category;
 import com.maginsoft.utils.Utils;
 import com.orleonsoft.android.simplefilechooser.Constants;
 import com.orleonsoft.android.simplefilechooser.FileInfo;
+import com.orleonsoft.android.simplefilechooser.R;
 import com.orleonsoft.android.simplefilechooser.adapters.FileArrayAdapter;
 
 import android.app.Activity;
@@ -22,6 +23,7 @@ import android.os.Environment;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -30,7 +32,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-public class FileChooserActivity extends ListActivity implements OnItemClickListener {
+
+public class FileChooserActivity extends ActionBarActivity implements OnItemClickListener {
 
 	private File currentFolder;
 	private FileArrayAdapter fileArrayListAdapter;
@@ -61,8 +64,8 @@ public class FileChooserActivity extends ListActivity implements OnItemClickList
 
 		setContentView(main);
 
-	    getActionBar().setDisplayHomeAsUpEnabled(true);
-	    getActionBar().setHomeButtonEnabled(true);
+	    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+	    getSupportActionBar().setHomeButtonEnabled(true);
 		_context = this;
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
@@ -101,14 +104,14 @@ public class FileChooserActivity extends ListActivity implements OnItemClickList
 	    	     public void onDrawerClosed(View view) 
 	    	     {
 	    	           // getSupportActionBar().setTitle(mTitle);
-	    	            invalidateOptionsMenu(); // creates call to
+	    	            supportInvalidateOptionsMenu(); // creates call to
 	    	                                            // onPrepareOptionsMenu()
 	    	     }
 
 	    	     public void onDrawerOpened(View drawerView) 
 	    	     {
 	    	           // getSupportActionBar().setTitle(mDrawerTitle);
-	    	            invalidateOptionsMenu(); // creates call to
+	    	            supportInvalidateOptionsMenu(); // creates call to
 	    	                                            // onPrepareOptionsMenu()
 	    	     }
 	           };
@@ -260,17 +263,16 @@ public class FileChooserActivity extends ListActivity implements OnItemClickList
 		fileArrayListAdapter = new FileArrayAdapter(FileChooserActivity.this,
 				file_row, dirs);
 		
-		//ListView lv = (ListView)findViewById(R.id.list);
-		//lv.setOnItemClickListener(this);
-		//lv.setAdapter(fileArrayListAdapter);
+		ListView lv = (ListView)findViewById(R.id.list);
+		lv.setOnItemClickListener(this);
+		lv.setAdapter(fileArrayListAdapter);
 		
-		this.setListAdapter(fileArrayListAdapter);
+		//this.setListAdapter(fileArrayListAdapter);
 	}
 
-	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 
-		super.onListItemClick(l, v, position, id);
+		//super.onListItemClick(l, v, position, id);
 		FileInfo fileDescriptor = fileArrayListAdapter.getItem(position);
 		if (fileDescriptor.isFolder() || fileDescriptor.isParent()) {
 			currentFolder = new File(fileDescriptor.getPath());
