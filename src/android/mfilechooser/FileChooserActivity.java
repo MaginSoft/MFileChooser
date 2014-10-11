@@ -11,7 +11,6 @@ import com.maginsoft.data.Category;
 import com.maginsoft.utils.Utils;
 import com.orleonsoft.android.simplefilechooser.Constants;
 import com.orleonsoft.android.simplefilechooser.FileInfo;
-import com.orleonsoft.android.simplefilechooser.R;
 import com.orleonsoft.android.simplefilechooser.adapters.FileArrayAdapter;
 
 import android.app.Activity;
@@ -263,7 +262,9 @@ public class FileChooserActivity extends ActionBarActivity implements OnItemClic
 		fileArrayListAdapter = new FileArrayAdapter(FileChooserActivity.this,
 				file_row, dirs);
 		
-		ListView lv = (ListView)findViewById(R.id.list);
+		int listId = this.getResources().getIdentifier("list", "id", this.getPackageName());
+				
+		ListView lv = (ListView)findViewById(listId);
 		lv.setOnItemClickListener(this);
 		lv.setAdapter(fileArrayListAdapter);
 		
