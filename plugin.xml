@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="com.maginsoft.mfilechooser"
-    version="1.0.0">
+    version="1.0.1">
     <name>Maginsoft FileChooser</name>
     <description>File Chooser for Cordova/Phonegap</description>
     <license>MIT</license>
@@ -117,5 +117,7 @@
         <source-file src="src/android/mfilechooser/res/values/styles.xml" target-dir="res/values" />	
         <source-file src="src/android/mfilechooser/res/values-v11/styles.xml" target-dir="res/values-v11" />	
         <source-file src="src/android/mfilechooser/res/values-v14/styles.xml" target-dir="res/values-v14" />			
+		
+		<framework src="src/android/android-support-v7-appcompat" custom="true" />
     </platform>
 </plugin>
