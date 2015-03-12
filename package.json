@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "name": "am.armsoft.mfilechooser",
+    "cordova_name": "ArmSoft FileChooser",
+    "description": "File Chooser for Cordova/Phonegap",
+    "license": "MIT",
+    "repo": "https://github.com/roberthovhannisyan/MFileChooser",
+    "keywords": [
+        "cordova",
+        "filechooser",
+        "android",
+        "filepicker",
+        "phonegap"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

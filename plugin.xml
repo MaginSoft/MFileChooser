@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="am.armsoft.mfilechooser"
-    version="1.0.0">
+    version="1.0.1">
     <name>ArmSoft FileChooser</name>
     <description>File Chooser for Cordova/Phonegap</description>
     <license>MIT</license>
