@@ -1,4 +1,4 @@
-package com.maginsoft.phonegap.plugin;
+package am.armsoft.plugins;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;

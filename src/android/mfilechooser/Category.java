@@ -1,4 +1,4 @@
-package com.maginsoft.data;
+package am.armsoft.data;
 
 public class Category {
   public String title;

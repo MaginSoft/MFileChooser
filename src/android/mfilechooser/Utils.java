@@ -1,11 +1,11 @@
-package com.maginsoft.utils;
+package am.armsoft.utils;
 
 import java.io.File;
 
 import android.content.Context;
 import android.os.Environment;
 
-import com.maginsoft.data.Category;
+import am.armsoft.data.Category;
 
 public class Utils {
 	
