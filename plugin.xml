@@ -58,13 +58,13 @@
 
         <!-- cordova plugin src files -->
         <source-file src="src/android/mfilechooser/MFileChooser.java" target-dir="src/am/armsoft/plugins" />
-        <source-file src="src/android/mfilechooser/Category.java" target-dir="src/am/armsoft/plugins" />
-        <source-file src="src/android/mfilechooser/Constants.java" target-dir="src/am/armsoft/plugins" />
-        <source-file src="src/android/mfilechooser/DirectoryAdapter.java" target-dir="src/am/armsoft/plugins" />
-        <source-file src="src/android/mfilechooser/FileArrayAdapter.java" target-dir="src/am/armsoft/plugins" />
-        <source-file src="src/android/mfilechooser/FileChooserActivity.java" target-dir="src/am/armsoft/plugins" />        
-        <source-file src="src/android/mfilechooser/FileInfo.java" target-dir="src/am/armsoft/plugins" />
-	<source-file src="src/android/mfilechooser/Utils.java" target-dir="src/am/armsoft/plugins" />
+        <source-file src="src/android/mfilechooser/Category.java" target-dir="src/am/armsoft/data" />
+        <source-file src="src/android/mfilechooser/Constants.java" target-dir="src/com/orleonsoft/android/simplefilechooser" />
+        <source-file src="src/android/mfilechooser/DirectoryAdapter.java" target-dir="src/am/armsoft/adapters" />
+        <source-file src="src/android/mfilechooser/FileArrayAdapter.java" target-dir="src/com/orleonsoft/android/simplefilechooser/adapters" />
+        <source-file src="src/android/mfilechooser/FileChooserActivity.java" target-dir="src/com/orleonsoft/android/simplefilechooser/ui" />        
+        <source-file src="src/android/mfilechooser/FileInfo.java" target-dir="src/com/orleonsoft/android/simplefilechooser" />
+	<source-file src="src/android/mfilechooser/Utils.java" target-dir="src/am/armsoft/utils" />
 
         <!-- res files -->
         <source-file src="src/android/mfilechooser/res/drawable/divider_line_grey.png" target-dir="res/drawable" />
