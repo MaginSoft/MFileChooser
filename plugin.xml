@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="am.armsoft.mfilechooser"
-    version="1.0.1">
+    version="1.0.2">
     <name>ArmSoft FileChooser</name>
     <description>File Chooser for Cordova/Phonegap</description>
     <license>MIT</license>
@@ -30,15 +30,6 @@
             <string name="internal">Internal</string>
             <string name="external">External</string>
         </config-file>
-        <config-file target="res/values/colors.xml" parent="/*">
-		    <color name="redcolor">#FF0000</color>
-            <color name="graycolor">#aaaaaa</color>
-            <color name="stat_font_color">#9c917a</color>
-            <color name="main_background">#171717</color>
-            <color name="green">#8FCC85</color>
-            <color name="blue">#ff33b5e5</color>
-            <color name="transparentgray">#60aaaaaa</color>
-		</config-file>
 		
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -113,7 +104,7 @@
         <source-file src="src/android/mfilechooser/res/layout/file_row.xml" target-dir="res/layout" />
         <source-file src="src/android/mfilechooser/res/layout/main.xml" target-dir="res/layout" />
 
-        <source-file src="src/android/mfilechooser/res/values/colors.xml" target-dir="res/values" />	
+        <source-file src="src/android/mfilechooser/res/values/colors_filechooser.xml" target-dir="res/values" />
         <source-file src="src/android/mfilechooser/res/values/styles.xml" target-dir="res/values" />	
         <source-file src="src/android/mfilechooser/res/values-v11/styles.xml" target-dir="res/values-v11" />	
         <source-file src="src/android/mfilechooser/res/values-v14/styles.xml" target-dir="res/values-v14" />			
