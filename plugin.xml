@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="am.armsoft.mfilechooser"
-    version="1.0.2">
+    version="1.0.3">
     <name>ArmSoft FileChooser</name>
     <description>File Chooser for Cordova/Phonegap</description>
     <license>MIT</license>
@@ -12,16 +12,23 @@
     <js-module src="www/mfilechooser.js" name="MFileChooser">
         <clobbers target="MFileChooser" />
     </js-module>
+    
+    <engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
 
     <!-- android -->
     <platform name="android">
+        
+        <framework src="com.android.support:support-v4:+" />
+        
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MFileChooser" >
                 <param name="android-package" value="am.armsoft.plugins.MFileChooser"/>
             </feature>
         </config-file>
 
-        <config-file target="res/values/strings.xml" parent="/*">			
+        <config-file target="res/values/strings.xml" parent="/*">           
             <string name="fileSize">File Size</string>
             <string name="currentDir">Current Dir</string>
             <string name="drawer_open">Open</string>
@@ -30,7 +37,7 @@
             <string name="internal">Internal</string>
             <string name="external">External</string>
         </config-file>
-		
+        
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -43,10 +50,8 @@
                android:exported="true"
                android:label="@string/app_name">
            </activity>
-	</config-file>
-	
-	<dependency id="android.support.v4" />
-
+        </config-file>
+    
         <!-- cordova plugin src files -->
         <source-file src="src/android/mfilechooser/MFileChooser.java" target-dir="src/am/armsoft/plugins" />
         <source-file src="src/android/mfilechooser/Category.java" target-dir="src/am/armsoft/data" />
@@ -55,17 +60,17 @@
         <source-file src="src/android/mfilechooser/FileArrayAdapter.java" target-dir="src/com/orleonsoft/android/simplefilechooser/adapters" />
         <source-file src="src/android/mfilechooser/FileChooserActivity.java" target-dir="src/com/orleonsoft/android/simplefilechooser/ui" />        
         <source-file src="src/android/mfilechooser/FileInfo.java" target-dir="src/com/orleonsoft/android/simplefilechooser" />
-	<source-file src="src/android/mfilechooser/Utils.java" target-dir="src/am/armsoft/utils" />
+        <source-file src="src/android/mfilechooser/Utils.java" target-dir="src/am/armsoft/utils" />
 
         <!-- res files -->
         <source-file src="src/android/mfilechooser/res/drawable/divider_line_grey.png" target-dir="res/drawable" />
         <source-file src="src/android/mfilechooser/res/drawable/drawer_list_selector.xml" target-dir="res/drawable" />
         <source-file src="src/android/mfilechooser/res/drawable/drawer_shadow.9.png" target-dir="res/drawable" />
-		
+        
         <source-file src="src/android/mfilechooser/res/drawable-hdpi/ic_launcher.png" target-dir="res/drawable-hdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-hdpi/ic_navigation_drawer.png" target-dir="res/drawable-hdpi" />
         
-	<source-file src="src/android/mfilechooser/res/drawable-mdpi/_blank.png" target-dir="res/drawable-mdpi" />
+        <source-file src="src/android/mfilechooser/res/drawable-mdpi/_blank.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/aac.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/apk.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/avi.png" target-dir="res/drawable-mdpi" />
@@ -73,15 +78,15 @@
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/blank.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/doc.png" target-dir="res/drawable-mdpi" />
         
-	<source-file src="src/android/mfilechooser/res/drawable-mdpi/folder.png" target-dir="res/drawable-mdpi" />
+        <source-file src="src/android/mfilechooser/res/drawable-mdpi/folder.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/gif.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/ic_launcher.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/ic_navigation_drawer.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/jpg.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/mp3.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/mp4.png" target-dir="res/drawable-mdpi" />
-		
-	<source-file src="src/android/mfilechooser/res/drawable-mdpi/odp.png" target-dir="res/drawable-mdpi" />
+        
+        <source-file src="src/android/mfilechooser/res/drawable-mdpi/odp.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/ods.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/odt.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/pdf.png" target-dir="res/drawable-mdpi" />
@@ -89,24 +94,24 @@
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/ppt.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/rar.png" target-dir="res/drawable-mdpi" />
         
-	<source-file src="src/android/mfilechooser/res/drawable-mdpi/rtf.png" target-dir="res/drawable-mdpi" />
+        <source-file src="src/android/mfilechooser/res/drawable-mdpi/rtf.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/txt.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/xls.png" target-dir="res/drawable-mdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-mdpi/zip.png" target-dir="res/drawable-mdpi" />
-		
-	<source-file src="src/android/mfilechooser/res/drawable-xhdpi/ic_launcher.png" target-dir="res/drawable-xhdpi" />
+        
+        <source-file src="src/android/mfilechooser/res/drawable-xhdpi/ic_launcher.png" target-dir="res/drawable-xhdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-xhdpi/ic_navigation_drawer.png" target-dir="res/drawable-xhdpi" />
-		
+        
         <source-file src="src/android/mfilechooser/res/drawable-xxhdpi/ic_launcher.png" target-dir="res/drawable-xxhdpi" />
         <source-file src="src/android/mfilechooser/res/drawable-xxhdpi/ic_navigation_drawer.png" target-dir="res/drawable-xxhdpi" />
-		
+        
         <source-file src="src/android/mfilechooser/res/layout/drawer_list_item.xml" target-dir="res/layout" />
         <source-file src="src/android/mfilechooser/res/layout/file_row.xml" target-dir="res/layout" />
         <source-file src="src/android/mfilechooser/res/layout/main.xml" target-dir="res/layout" />
 
         <source-file src="src/android/mfilechooser/res/values/colors_filechooser.xml" target-dir="res/values" />
-        <source-file src="src/android/mfilechooser/res/values/styles.xml" target-dir="res/values" />	
-        <source-file src="src/android/mfilechooser/res/values-v11/styles.xml" target-dir="res/values-v11" />	
-        <source-file src="src/android/mfilechooser/res/values-v14/styles.xml" target-dir="res/values-v14" />			
+        <source-file src="src/android/mfilechooser/res/values/styles.xml" target-dir="res/values" />    
+        <source-file src="src/android/mfilechooser/res/values-v11/styles.xml" target-dir="res/values-v11" />    
+        <source-file src="src/android/mfilechooser/res/values-v14/styles.xml" target-dir="res/values-v14" />            
     </platform>
 </plugin>
