@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="am.armsoft.mfilechooser"
-    version="1.0.3">
+    version="1.0.4">
     <name>ArmSoft FileChooser</name>
     <description>File Chooser for Cordova/Phonegap</description>
     <license>MIT</license>
@@ -20,7 +20,7 @@
     <!-- android -->
     <platform name="android">
         
-        <framework src="com.android.support:support-v4:+" />
+        <dependency id="android.support.v4" url="https://github.com/roberthovhannisyan/cordova-plugin-android-support-v4" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MFileChooser" >

@@ -1,6 +1,6 @@
 {
   "name": "am.armsoft.mfilechooser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "File Chooser for Cordova/Phonegap",
   "cordova": {
     "id": "am.armsoft.mfilechooser",
