@@ -7,12 +7,12 @@ Cordova/Phonegap plugin that supplies a File Chooser for Android 4+. The File Ch
 
 ## Adding the Plugin to your project ##
 
-Plugin has been successfully tested on Android 4+ device with Cordova 3.
+Plugin has been successfully tested on Android 4+ device with Cordova 5.
 
 To install the plugin
 
 ```
-cordova plugin add https://github.com/MaginSoft/MFileChooser.git
+cordova plugin add nl.fellow-it.mfilechooser
 ```
 
 ## Using the plugin ##
@@ -49,8 +49,8 @@ The plugin creates the object `window.plugins.mfilechooser`. To use, call the `o
 
 ## Release notes ##
 
-September 16, 2014 Initial release
+August 14, 2015 Initial release
 
 ## Contribution ##
 
-I wrote this plugin basing on the [simple-file-chooser](https://github.com/ingyesid/simple-file-chooser) by [ingyesid](https://github.com/ingyesid)
+This plugin is exactly the same as [Maginsoft FileChooser](https://github.com/MaginSoft/MFileChooser) all that I changed was the screenrotation. 
