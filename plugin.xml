@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     id="nl.fellow-it.mfilechooser"
-    version="1.0.0">
+    version="1.0.1">
     <name>Fellow-IT filechooser</name>
     <description>File Chooser for Cordova/Phonegap based on Maginsoft FileChooser. One change, it can go landscape and portait mode.</description>
     <license>MIT</license>
@@ -16,7 +16,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="MFileChooser" >udo 
+            <feature name="MFileChooser" > 
                 <param name="android-package" value="com.maginsoft.mfilechooser.phonegap.plugin.MFileChooser"/>
             </feature>
         </config-file>
