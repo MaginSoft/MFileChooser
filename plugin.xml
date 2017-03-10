@@ -20,7 +20,7 @@
     <!-- android -->
     <platform name="android">
         
-        <dependency id="android.support.v4" url="https://github.com/roberthovhannisyan/cordova-plugin-android-support-v4" />
+        <framework src="com.android.support:support-v4:+" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MFileChooser" >
