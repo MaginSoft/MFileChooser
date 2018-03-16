@@ -20,7 +20,7 @@
     <!-- android -->
     <platform name="android">
         
-        <framework src="com.android.support:support-v4:+" />
+        <framework src="com.android.support:support-v4:24.1.1+" />
         
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MFileChooser" >
