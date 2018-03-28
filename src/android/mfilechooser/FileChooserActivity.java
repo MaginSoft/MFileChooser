@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.maginsoft.adapters.DirectoryAdapter;
-import com.maginsoft.data.Category;
-import com.maginsoft.utils.Utils;
+import am.armsoft.adapters.DirectoryAdapter;
+import am.armsoft.data.Category;
+import am.armsoft.utils.Utils;
 import com.orleonsoft.android.simplefilechooser.Constants;
 import com.orleonsoft.android.simplefilechooser.FileInfo;
 import com.orleonsoft.android.simplefilechooser.adapters.FileArrayAdapter;

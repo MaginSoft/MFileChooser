@@ -1,9 +1,9 @@
-package com.maginsoft.adapters;
+package am.armsoft.adapters;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.maginsoft.data.Category;
+import am.armsoft.data.Category;
 
 import android.app.Activity;
 import android.content.Context;

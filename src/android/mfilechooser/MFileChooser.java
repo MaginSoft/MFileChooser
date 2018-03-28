@@ -1,4 +1,4 @@
-package com.maginsoft.phonegap.plugin;
+package am.armsoft.plugins;
 
 import java.util.ArrayList;
 
