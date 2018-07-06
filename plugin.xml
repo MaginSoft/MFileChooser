@@ -2,8 +2,8 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="nl.fellow-it.mfilechooser"
-    version="1.0.3">
+    id="cordova-plugin-mfilechooser"
+    version="1.0.4">
     <name>Fellow-IT filechooser</name>
     <description>File Chooser for Cordova/Phonegap based on Maginsoft FileChooser. One change, it can go landscape and portait mode.</description>
     <license>MIT</license>
@@ -14,10 +14,14 @@
         <clobbers target="MFileChooser" />
     </js-module>
 
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
     <!-- android -->
     <platform name="android">
 
-	<framework src="com.android.support:support-v4:24.1.1+" />
+	    <framework src="com.android.support:support-v4:24.1.1+" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="MFileChooser" > 
@@ -67,8 +71,6 @@
         <source-file src="src/android/mfilechooser/FileChooserActivity.java" target-dir="src/com/orleonsoft/android/simplefilechooser/ui" />        
         <source-file src="src/android/mfilechooser/FileInfo.java" target-dir="src/com/orleonsoft/android/simplefilechooser" />
 		<source-file src="src/android/mfilechooser/Utils.java" target-dir="src/com/maginsoft/utils" />
-		
-        <source-file src="src/android/mfilechooser/libs/android-support-v4.jar" target-dir="libs/" />
 
         <!-- res files -->
         <source-file src="src/android/mfilechooser/res/drawable/divider_line_grey.png" target-dir="res/drawable" />
