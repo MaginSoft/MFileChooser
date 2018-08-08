@@ -49,7 +49,7 @@ The plugin creates the object `window.plugins.mfilechooser`. To use, call the `o
 
 ## Release notes ##
 
-1.0.5: Updated README and package id
+1.0.5: Fix res paths for Cordova 7 and updated README and package id
 
 1.0.4: Fix support dependency and change package name to cordova standards
 
