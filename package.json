@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-mfilechooser",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "File Chooser for Cordova/Phonegap based on Maginsoft FileChooser. One change, it can go landscape and portait mode.",
   "cordova": {
     "id": "cordova-plugin-mfilechooser",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Langstra/MFileChooser.git"
+    "url": "git+https://github.com/Evolution-36/MFileChooser.git"
   },
   "keywords": [
     "cordova",
@@ -21,10 +21,10 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Fellow-IT",
+  "author": "Evolution36",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Langstra/MFileChooser/issues"
+    "url": "https://github.com/Evolution-36/MFileChooser/issues"
   },
-  "homepage": "https://github.com/Langstra/MFileChooser#readme"
+  "homepage": "https://github.com/Evolution-36/MFileChooser#readme"
 }
